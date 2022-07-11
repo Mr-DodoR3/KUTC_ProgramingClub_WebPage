@@ -5,7 +5,7 @@ body, div, p, h1, h2, h3, h4, h5, h6, ol{
 }
 body {
   background-size: 1200px 800px;
-  background-image: url(image/program.png);
+  background-image: url(Image/program.png);
   animation: bg 10s infinite linear;
 }
 @keyframes bg {
