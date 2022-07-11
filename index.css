@@ -32,3 +32,30 @@
   list-style: none;
   font-size: 16px;
 }
+
+.outline{
+  overflow: scroll;
+  background-position: center center;
+  width: 90%;
+  height: 320px;
+  margin-left: 5%;
+  margin-top: 50px;
+  background: #222;
+  border:2px solid greenyellow;
+}
+
+dl {
+  padding-left: 15px;
+}
+
+dt {
+  color: violet;
+}
+
+dd {
+  color: #fff2b8;
+}
+
+.year {
+  color: skyblue;
+}

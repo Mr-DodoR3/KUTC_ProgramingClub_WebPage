@@ -3,8 +3,8 @@
   margin: 0 auto;
 }
 
-.chapter h2 {
-  font-size: 28px;
+.chapter h1 {
+  font-size: 32px;
   padding-top: 50px;
   border-bottom: 2px solid greenyellow;
 }

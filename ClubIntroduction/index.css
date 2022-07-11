@@ -1,0 +1,55 @@
+.chapter {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.chapter h1 {
+  font-size: 32px;
+  padding-top: 50px;
+  border-bottom: 2px solid greenyellow;
+}
+
+.part {
+  padding-top: 5px;
+}
+
+.part2 {
+  padding-top: 15px;
+}
+
+.part h3 {
+  font-size: 22px;
+  padding-top: 10px;
+  border-bottom: 1px solid #666;
+}
+
+.steal {
+  text-decoration: line-through;
+}
+
+.cancelline {
+  text-decoration: line-through;
+}
+
+li {
+  font-size: 20px;
+  padding-top: 4px;
+  list-style: none
+}
+
+.breakout {
+  width: 320px;
+  height: 300px;
+}
+
+dt.infoClub {
+  padding-top: 0px;
+  float: left ;
+  clear: left ;
+  margin-right: 0.5em ;
+  width: 150px ;
+}
+
+.annotation {
+  font-size: 12px;
+}
