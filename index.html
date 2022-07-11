@@ -4,15 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>テストページ</title>
-    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="../Image/dodo.ico">
-    <script type="text/javascript" src="../base.js"></script>
+    <link rel="icon" href="Image/dodo.ico">
+    <script type="text/javascript" src="base.js"></script>
   </head>
   
   <body>
-    <script>fadeoutScene()</script>
-    <script>header()</script>
+    <div id="change" class="change"></div>
+    <script src="fade.js"></script>
+    
+    <header>
+      <a href="index.html"><img class="logo" src="Image/Logo.png"></a>
+      <ol class="headerURL">
+        <a href="ClubIntroduction/index.html"><li>部活動紹介</li></a>
+        <a href="PageList/index.html"><li>記事一覧</li></a>
+        <a href="MyIntroduction/index.html"><li>自己紹介</li></a>
+        <a href="LinkData/index.html"><li>外部リンク集</li></a>
+      </ol>
+    </header>
 
     <main>
       <div class="chapter">
@@ -27,18 +37,24 @@
       <div class="chapter">
         <h2>ページ制作者の自己紹介</h2>
         <div class="part">
-          <img src="../Image/dodo.jpg" width="200px" height="200px">
+          <img src="Image/dodo.jpg" width="200px" height="200px">
           <ol class="selfIntroduction">
             <li>名前　：西半涼賀</li>
             <li>学年組：3年I組 (2022年6月現在)</li>
             <li>部活動：プログラミング技術部、ロボット技術部 など...</li>
-            <li><a href="../MyIntroduction/index.html">詳細はこちらから</a></li>
+            <li><a href="MyIntroduction/index.html">詳細はこちらから</a></li>
           </ol>
         </div>
       </div>
       <div class="space"></div>
     </main>
 
-    <script>footer()</script>
+    <footer>
+      <div class="space"></div>
+      <div class="footerContents">
+        <div class="footerLogo"><img src="Image/Logo.png" width="300px" height="45px"></div>
+        <p class="copyright">&copy;Ryoga Nishihan</p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -3,7 +3,7 @@ function header()
   document.write(
     `
     <header>
-      <a href="../TopPage/index.html"><img class="logo" src="../Image/Logo.png"></a>
+      <a href="../index.html"><img class="logo" src="../Image/Logo.png"></a>
       <ol class="headerURL">
         <a href="../ClubIntroduction/index.html"><li>部活動紹介</li></a>
         <a href="../PageList/index.html"><li>記事一覧</li></a>
