@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head lang="ja">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>テストページ</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="icon" href="../Image/dodo.ico">
+    <script type="text/javascript" src="../base.js"></script>
+  </head>
+  
+  <body>
+    <script>fadeoutScene()</script>
+    <script>header()</script>
+
+    <main>
+      <div class="introduction">
+        <h1>HTML</h1>
+        <p>HTMLはこんなWebページの開発に使われる文字を表示するための言語です。</p>
+        <h2>文法</h2>
+        <p>HTMLは普通のプログラミング言語と違ってif文とかfor文とかはありません。</p>
+        <p>表示させたい文や画像をタグと呼ばれるもので囲むことで文字を表示させることができます。</p>
+        <script class="gist" src="https://gist.github.com/Mr-DodoR3/df69b5e0f3c2a9d335c015326f37ffe9.js"></script>
+        <p>↑「HelloWorld」と表示させるプログラム</p>
+        <h2>タグ一覧</h2>
+        <table border="5">
+          <tr>
+            <th class="fColumn">&lt;head&gt;初期設定記入&lt;/head&gt;</th>
+            <th class="sColumn">ページの設定等を記入します。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;title&gt;文章&lt;/title&gt;</th>
+            <th class="sColumn">ページのタイトルを設定します。（head内に記入）</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;meta charset="文字コード"&gt;</th>
+            <th class="sColumn">使用する文字コードを設定します、といってもだいたいUTF-8でいいですが...（head内に記入）</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;link rel="icon" href="URL"&gt;</th>
+            <th class="sColumn">ウェブページのアイコンを読み込みます。（head内に記入）</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;link rel="stylesheet" href="読み込むCSSファイル.css"&gt;</th>
+            <th class="sColumn">CSSファイルを読み込みます。（head内に記入）</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;body&gt;本文&lt;/body&gt;</th>
+            <th class="sColumn">表示する本文を記入する場所です。これ以降は全てbody内に記入するタグです。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;div&gt;子要素&lt;/div&gt;</th>
+            <th class="sColumn">レイアウト指定の要素であり、画面上に表示させるものの親要素としてよく使われます。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;h1&gt;見出し&lt;/h1&gt;</th>
+            <th class="sColumn">見出しを記入します、ちなみに見出しはh1からh6までの種類が存在します。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;p&gt;文字列&lt;/p&gt;</th>
+            <th class="sColumn">段落を表す要素です、説明等の本文によく用いられます。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;a href="URL"&gt;文字列&lt;/a&gt;</th>
+            <th class="sColumn">hrefで指定したURLに飛びます。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;img scr="URL" alt="説明"&gt;</th>
+            <th class="sColumn">scrで指定した画像を表示します、altは表示できない場合の代替テキストの設定です。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;ul&gt;リスト要素&lt;/ul&gt;</th>
+            <th class="sColumn">後術するli要素の親要素で、先頭に黒点を付けます。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;ol&gt;リスト要素&lt;/ol&gt;</th>
+            <th class="sColumn">後術するli要素の親要素で、先頭に連番を付けます。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;li&gt;文字列&lt;/li&gt;</th>
+            <th class="sColumn">箇条書きにして文章を表示します。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;span&gt;文字列&lt;/span&gt;</th>
+            <th class="sColumn">主に文の一部で用いるものであり、文の一部分にのみ別のCSSを適応させる。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;br&gt;</th>
+            <th class="sColumn">改行させます。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;script src="URL"&gt;&lt;/script&gt;</th>
+            <th class="sColumn">srcで指定したJavaScriptを読み込みます。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;input&gt;</th>
+            <th class="sColumn">1行のテキスト入力を受け付ける要素です。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;input type="submit" value="値"&gt;</th>
+            <th class="sColumn">送信ボタンの要素を意味する要素で、type="submit"は送信ボタンであることを示し、valueでボタンのテキストをその値に変更します。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">&lt;textarea&gt;&lt;/textarea&gt;</th>
+            <th class="sColumn">複数行のテキスト入力を受け付ける要素です。。</th>
+          </tr>
+        </table>
+      </div>
+      <div class="space"></div>
+    </main>
+
+    <script>footer()</script>
+  </body>
+</html>

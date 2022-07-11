@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head lang="ja">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>テストページ</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="icon" href="../Image/dodo.ico">
+    <script type="text/javascript" src="../base.js"></script>
+  </head>
+  
+  <body>
+    <script>fadeoutScene()</script>
+    <script>header()</script>
+
+    <main>
+      <div class="introduction">
+        <h1>Java</h1>
+        <p>メジャーでいろんなことができるプログラミング言語です。</p>
+        <p>具体的にはWebアプリケーションやパソコンのソフトウェア、スマホのアプリ開発に使われます。</p>
+        <p>ちなみにこの部活（というかこの学校）で最もよく使われる言語です。知らんけど。</p>
+        <h2>文法</h2>
+        <h3>Hello World</h3>
+        <p>「Hello World」と表示するプログラムです。</p>
+        <script src="https://gist.github.com/Mr-DodoR3/e4f77d88f0e72d354a6ebfbc4011ae54.js"></script>
+
+        <h2>変数・配列</h2>
+        <p>変数と配列の宣言についてのプログラムです。</p>
+        <script src="https://gist.github.com/Mr-DodoR3/4cf73818ca47f2536d8884b754f26e35.js"></script>
+        <p>また、変数の型は以下の通りです。（主に自分がよく使うもの抜粋）</p>
+        <table border="2">
+          <tr>
+            <th>int</th>
+            <th>16bitの整数型</th>
+          </tr>
+          <tr>
+            <th>long</th>
+            <th>32bitの整数型</th>
+          </tr>
+          <tr>
+            <th>float</th>
+            <th>単精度浮動小数点型（ただの32bitの小数点型だと思ってもらってOK）</th>
+          </tr>
+          <tr>
+            <th>double</th>
+            <th>倍精度浮動小数点数型（ただの64bitの小数点型だと思ってもらってOK）</th>
+          </tr>
+          <tr>
+            <th>char</th>
+            <th>文字型、1文字を表す型で文字は''で囲んで表す。</th>
+          </tr>
+          <tr>
+            <th>String</th>
+            <th>文字列型、charとは違い文章を表す型で、文字列は""で囲んで表す。</th>
+          </tr>
+          <tr>
+            <th>boolean</th>
+            <th>真偽の2値を扱う型、trueかfalseしか入らない。</th>
+          </tr>
+        </table>
+
+        <h2>制御文</h2>
+        <h3>条件分岐文</h3>
+        <p>Javaの条件分岐は主にif文とswitch文があります。</p>
+        <p>また、elseif文を一つにまとめた三項演算子というものも存在します。</p>
+        <script src="https://gist.github.com/Mr-DodoR3/7713d8cd09698dfe4b6cea3d64ad3d9c.js"></script>
+        <p>↑「HelloWorld」と表示させるプログラム</p>
+        <h3>繰り返し文</h3>
+        <p>Javaの繰り返し文は主にfor文、do文、while文があります。</p>
+        <p>for文は指定数回繰り返すときに、while文は条件が満たしてるときに、do文はwhile文と同様条件を満たしているときに繰り返されるが、最低でも1度はプログラムが実行されるのが特徴。</p>
+        <p>ちなみに先輩によるとdo分やwhile文よりfor分のほうがいいらしいです。</p>
+        <script src="https://gist.github.com/Mr-DodoR3/4b7133192bf43c08670aabdc21e3ce4b.js"></script>
+
+        <h2>クラス</h2>
+        <p>Javaはオブジェクト指向の言語のため、クラスを作ることが可能です。</p>
+        <script src="https://gist.github.com/Mr-DodoR3/e6dac0e34c86d0f72c64777e024b242a.js"></script>
+
+        <h2>関数一覧<span class="tips">(関数以外のやつもかなりあるが...)</span></h2>
+        <table border="5">
+          <tr>
+            <th class="fColumn">System.out.print(String 文章)</th>
+            <th class="sColumn">()内に書いた文章をコンソールに出力します。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">System.out.println(String 文章)</th>
+            <th class="sColumn">()内に書いた文章をコンソールに出力します。<br>System.out.print()との違いは改行を行うことです。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">int = Math.abs(int 数値)</th>
+            <th class="sColumn">引数の絶対値を返します。<br>floatやlongなど違う型の関数も用意されている。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">int = Math.round(int 数値)</th>
+            <th class="sColumn">四捨五入します。<br>切り上げはceilメソッド、切り下げはfloorメソッドを用います。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">double = Math.pow(double 底, double 指数);</th>
+            <th class="sColumn">累乗の計算を行います。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">double = Math.sqrt(double 数値);</th>
+            <th class="sColumn">数値の平方根を返します。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">double = Math.cbrt(double 数値);</th>
+            <th class="sColumn">数値の立方根を返します。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">double = sin(double ラジアン値);</th>
+            <th class="sColumn">引数のラジアン値の正弦(サイン)を返します。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">double = cos(double ラジアン値);</th>
+            <th class="sColumn">引数のラジアン値の余弦(コサイン)を返します。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">double = tan(double ラジアン値);</th>
+            <th class="sColumn">引数のラジアン値の正接(タンジェント)を返します。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">import java.util.Scanner;</th>
+            <th class="sColumn">文字の入出力に必要なものです。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">import java.util.Scanner;</th>
+            <th class="sColumn">文字の入出力に必要なものです。<br>Scannerクラスをインスタンス化する際、「System.in」を引数に渡す必要がある。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">String = scanner.next();</th>
+            <th class="sColumn">キーボード入力を受け付ける。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">int = scanner.nextInt();</th>
+            <th class="sColumn">整数のキーボード入力を受け付ける。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">int = scanner.nextInt();</th>
+            <th class="sColumn">整数のキーボード入力を受け付ける。</th>
+          </tr>
+        </table>
+      </div>
+      <div class="space"></div>
+    </main>
+
+    <script>footer()</script>
+  </body>
+</html>
