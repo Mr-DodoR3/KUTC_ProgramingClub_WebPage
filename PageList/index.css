@@ -32,3 +32,43 @@
   list-style: none;
   font-size: 16px;
 }
+
+.outline {
+  width: 60%;
+  height: 50px;
+  margin-left: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #222;
+  transition: 0.3s;
+}
+
+.outline_top {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 8px;
+  border-bottom: none;
+}
+
+.arrow {
+  float: right;
+  margin-right: 2%;
+  margin-top: 15px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.in:checked ~ .outline {
+  height: 200px;
+}
+.in:checked ~ .outline h6 {
+  border-bottom: 1px solid greenyellow;
+}
+.in:checked ~ .outline img {
+  background-image: url("../Image/arrow_2.png");
+  background-repeat: no-repeat;
+}
+
+input {
+  display: none;
+}

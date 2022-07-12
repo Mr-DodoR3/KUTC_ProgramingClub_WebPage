@@ -5,10 +5,10 @@ function header()
     <header>
       <a href="../index.html"><img class="logo" src="../Image/Logo.png"></a>
       <ol class="headerURL">
-        <a href="../ClubIntroduction/index.html"><li>部活動紹介</li></a>
-        <a href="../PageList/index.html"><li>記事一覧</li></a>
-        <a href="../MyIntroduction/index.html"><li>自己紹介</li></a>
-        <a href="../LinkData/index.html"><li>外部リンク集</li></a>
+        <a href="../ClubIntroduction/index.html" id="hlink"><li>部活動紹介</li></a>
+        <a href="../PageList/index.html" id="hlink"><li>記事一覧</li></a>
+        <a href="../MyIntroduction/index.html" id="hlink"><li>自己紹介</li></a>
+        <a href="../LinkData/index.html" id="hlink"><li>外部リンク集</li></a>
       </ol>
     </header>
     `

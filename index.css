@@ -34,7 +34,7 @@
 }
 
 .outline{
-  overflow: scroll;
+  overflow-y: scroll;
   background-position: center center;
   width: 90%;
   height: 320px;
@@ -42,6 +42,7 @@
   margin-top: 50px;
   background: #222;
   border:2px solid greenyellow;
+  scrollbar-color: greenyellow #222;
 }
 
 dl {
