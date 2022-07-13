@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>テストページ</title>
+    <title>記事一覧-KUTCプログラミング技術部</title>
     <link rel="stylesheet" href="../base.css">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="../Image/dodo.ico">
     <script type="text/javascript" src="../base.js"></script>
+    <script type="text/javascript" src="index.js"></script>
   </head>
   
   <body>
@@ -17,20 +18,48 @@
     <main>
       <div class="chapter">
         <h1>記事一覧</h1>
-        <input type="checkbox" id="outline" class="in">
+        <input type="checkbox" id="ckb" class="in" onchange="setImage();">
         <div class="outline">
-          <label for="outline"><img class="arrow" src="../Image/arrow_1.png"></label>
+          <label for="ckb"><img class="arrow" src="../Image/arrow_1.png" id="arrow_img"></label>
           <h6 class="outline_top">//目次//</h6>
+          <ol>
+            <li>文法・関数まとめ</li>
+            <div class="listChild">
+              <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+              </ol>
+            </div>
+            <li>文法・関数まとめ</li>
+            <div class="listChild">
+              <ol>
+                <li>Javaの基本を抑えよう！</li>
+                <li>Javaで数当てゲームを作ろう！</li>
+                <li>Processingで卓球ゲームを作ろう！</li>
+                <li>Swingでゲームを作ろう！</li>
+                <li>Unityでクリッカーゲームを作ろう！</li>
+                <li>Unityでクリッカーゲームを作ろう！</li>
+              </ol>
+            </div>
+            <li>その他</li>
+            <div class="listChild">
+              <ol>
+
+              </ol>
+            </div>
+          </ol>
         </div>
         <div class="part">
-          <h3>文法・関数まとめ一覧</h3>
+          <h3>文法・関数まとめ</h3>
           <ul>
             <li><a href="../HTML_info/index.html">HTML</a></li>
             <li><a href="../CSS_info/index.html">CSS</a></li>
-            <li>JavaScript</li>
+            <li><a href="../JavaScript_info/index.html">JavaScript</li>
             <li><a href="../Java_info/index.html">Java</a></li>
           </ul>
-          <h3>チュートリアル一覧</h3>
+          <h3>チュートリアル</h3>
           <ul class="liLast">
             <li>Javaの基本を抑えよう！</a></li>
             <li>Javaで数当てゲームを作ろう！</a></li>
@@ -38,6 +67,10 @@
             <li>Swingでゲームを作ろう！</li>
             <li>Unityでクリッカーゲームを作ろう！</li>
             <li>Unityでクリッカーゲームを作ろう！</li>
+          </ul>
+          <h3>その他</h3>
+          <ul>
+            <li></li>
           </ul>
         </div>
       </div>

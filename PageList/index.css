@@ -40,7 +40,20 @@
   margin-top: 20px;
   margin-bottom: 20px;
   background: #222;
-  transition: 0.3s;
+  transition: 0.5s;
+}
+
+.outline ol {
+  margin-left: 40px;
+  margin-top: 10px;
+  list-style-type: disc;
+  /* display: none; */
+  color: rgba(255, 255, 255, 0);
+  transition:all 0.5s;
+}
+
+.listChild ol {
+  list-style-type: circle;
 }
 
 .outline_top {
@@ -59,14 +72,14 @@
   cursor: pointer;
 }
 .in:checked ~ .outline {
-  height: 200px;
+  height: 400px;
 }
 .in:checked ~ .outline h6 {
   border-bottom: 1px solid greenyellow;
 }
-.in:checked ~ .outline img {
-  background-image: url("../Image/arrow_2.png");
-  background-repeat: no-repeat;
+.in:checked ~ .outline ol {
+  display: block;
+  color: rgba(255, 255, 255, 100);
 }
 
 input {

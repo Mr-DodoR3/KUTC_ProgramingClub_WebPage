@@ -1,0 +1,18 @@
+h1 {
+  font-size: 46px;
+  padding-top: 100px;
+  border-bottom: 2px solid red;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.topSpace {
+  padding-top: 50px;
+}
+
+.bottomSpace {
+  padding-bottom: 50px;
+}
