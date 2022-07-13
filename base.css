@@ -114,3 +114,13 @@ table {
   width: 60%;
   height: 64px;
 }
+
+table.highlight tr:nth-child(1n) td {
+  background: #DDD;
+}
+table.highlight tr:nth-child(2n) td {
+  background: #CCC;
+}
+.gist-meta {
+  display: none;
+}
