@@ -68,6 +68,10 @@ h4 {
   text-decoration: none;
 }
 
+#none {
+  color: #666;
+}
+
 .listChild ol {
   list-style-type: circle;
 }
@@ -88,7 +92,7 @@ h4 {
   cursor: pointer;
 }
 .in:checked ~ .outline {
-  height: 400px;
+  height: 500px;
 }
 .in:checked ~ .outline h6 {
   border-bottom: 1px solid greenyellow;
