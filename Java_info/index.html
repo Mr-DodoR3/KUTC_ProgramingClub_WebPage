@@ -23,12 +23,25 @@
         <h2>文法</h2>
         <h3>Hello World</h3>
         <p>「Hello World」と表示するプログラムです。</p>
+
+        <p class="file">index.java</p>
         <script src="https://gist.github.com/Mr-DodoR3/e4f77d88f0e72d354a6ebfbc4011ae54.js"></script>
+
+        <p>3行目の"System.out.println("文字列")は文字を表示させるメソッドである。</p>
+        <p>Javaでは分の終わりには";"(セミコロン)を付ける必要がある。(制御文とかは除く)</p>
+        <p>1行目と2行目は...Javaを動かすおまじないだ！(適当)</p>
+        <p>4行目と5行目の"}"は1行目と2行目を"{}"で囲む必要があるからある。</p>
 
         <h2>変数・配列</h2>
         <p>変数と配列の宣言についてのプログラムです。</p>
+
+        <p class="file">VariableTemp.java</p>
         <script src="https://gist.github.com/Mr-DodoR3/4cf73818ca47f2536d8884b754f26e35.js"></script>
-        <p>また、変数の型は以下の通りです。（主に自分がよく使うもの抜粋）</p>
+
+        <p>変数の宣言は [型 変数名 = 初期値;] です。</p>
+        <p>"="は数学と違って代入を表すので注意してください。</p>
+
+        <p><br>また、変数の型は以下の通りです。（主に自分がよく使うもの抜粋）</p>
         <table border="2">
           <tr>
             <th>int</th>
@@ -62,19 +75,37 @@
 
         <h2>制御文</h2>
         <h3>条件分岐文</h3>
-        <p>Javaの条件分岐は主にif文とswitch文があります。</p>
-        <p>また、elseif文を一つにまとめた三項演算子というものも存在します。</p>
+        <p>物事を判断し、行動を変えるための制御文です。</p>
+
+        <p class="file">BranchTemp.java</p>
         <script src="https://gist.github.com/Mr-DodoR3/7713d8cd09698dfe4b6cea3d64ad3d9c.js"></script>
-        <p>↑「HelloWorld」と表示させるプログラム</p>
+        
+        <p>Javaの条件分岐は主にif文とswitch文があります。</p>
+        <p>8~16行目がif文、19~29行目がswitch文です。</p>
+        <p>ちなみに、elseif文を一つにまとめた三項演算子(32行目)というものも存在します。</p>
+
         <h3>繰り返し文</h3>
+        <p>同じ処理を何度も繰り返すための処理です。</p>
+
+        <p class="file">LoopTemp.java</p>
+        <script src="https://gist.github.com/Mr-DodoR3/4b7133192bf43c08670aabdc21e3ce4b.js"></script>
+        
         <p>Javaの繰り返し文は主にfor文、do文、while文があります。</p>
         <p>for文は指定数回繰り返すときに、while文は条件が満たしてるときに、do文はwhile文と同様条件を満たしているときに繰り返されるが、最低でも1度はプログラムが実行されるのが特徴。</p>
         <p>ちなみに先輩によるとdo分やwhile文よりfor分のほうがいいらしいです。</p>
-        <script src="https://gist.github.com/Mr-DodoR3/4b7133192bf43c08670aabdc21e3ce4b.js"></script>
 
         <h2>クラス</h2>
         <p>Javaはオブジェクト指向の言語のため、クラスを作ることが可能です。</p>
+
+        <p class="file">Hello.java</p>
         <script src="https://gist.github.com/Mr-DodoR3/e6dac0e34c86d0f72c64777e024b242a.js"></script>
+
+        <p>今回はあくまでJavaの文法の書き方なので詳しいクラスの説明はしませんが、クラスとは設計図のようなものです。</p>
+        <p>例えば、シューティングゲームを作るとき、弾が複数同時に発射したいとなったとき、クラスを使えばこの設計図をもとに弾を作ってくれます。(作ったものはインスタンスという)</p>
+        <p>3行目はコンストラクタといい、インスタンスが作られたタイミングで呼び出されるメソッドです、こちらはクラス名と同名の必要があります。</p>
+        <p>8行目はクラスのメソッドです。</p>
+        <p>"public"はアクセス修飾子というもので、このメソッドはどこから扱えるかを示しています。</p>
+        <p>"public"は外部のインスタンスからでもメソッドが扱えることを示します。</p>
 
         <h2>関数一覧<span class="tips">(関数以外のやつもかなりあるが...)</span></h2>
         <table border="5">

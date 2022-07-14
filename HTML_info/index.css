@@ -6,11 +6,13 @@
 .introduction h1 {
   font-size: 32px;
   padding-top: 50px;
+  margin-bottom: 20px;
   border-bottom: 3px solid greenyellow;
 }
 .introduction h2 {
   font-size: 28px;
   padding-top: 50px;
+  margin-bottom: 20px;
   border-bottom: 2px solid greenyellow;
 }
 .introduction h3 {
@@ -25,6 +27,14 @@
 
 .part p {
   font-size: 16px;
+}
+
+.file {
+  margin-top: 20px;
+}
+
+.sColumn li {
+  list-style: none;
 }
 
 .part li {

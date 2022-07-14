@@ -4,46 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
     <title>CSS-KUTCプログラミング技術部</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="../base.css">
-    <link rel="icon" href="../Image/dodo.ico">
-    <script type="text/javascript" src="../base.js"></script>
   </head>
   
   <body>
-    <script>fadeoutScene()</script>
-    <script>header()</script>
+    <header>
+      <a href="../index.html"><img class="logo" src="../Image/Logo.png"></a>
+      <ol class="headerURL">
+        <a href="../ClubIntroduction/index.html" id="hlink"><li>部活動紹介</li></a>
+        <a href="../PageList/index.html" id="hlink"><li>記事一覧</li></a>
+        <a href="../MyIntroduction/index.html" id="hlink"><li>自己紹介</li></a>
+        <a href="../LinkData/index.html" id="hlink"><li>外部リンク集</li></a>
+      </ol>
+    </header>
 
     <main>
       <div class="introduction">
         <h1>CSS</h1>
         <p>CSSはこんなWebページをデザインするためのスタイルシート言語です。</p>
-        <p>このページもこの言語がないと<a href="index_NoCSSVer.html">こんな悲惨なページ</a>になってしまいます。</p>
+        <p>このページもこの言語がないとこんな悲惨なページになってしまいます...</p>
+        <p><a href="index.html">見にくいので早く戻しましょう</a></p>
         <h2>文法</h2>
         <p>CSSはHTMLで記入された文字に様々な装飾をするための言語です。</p>
         <p>HTMLで記入したものを装飾するための言語のため、事前にHTMLでCSSを読み込むプログラムを記入する必要があります。</p>
-
-        <p class="file">index.html</p>
-        <script src="https://gist.github.com/Mr-DodoR3/446ac7e32d2aaaa9d0b1b61c53d0414c.js"></script>
-
-        <p>これはHTMLで"Hello World Hello CSS"と表示するプログラムです。</p>
-        <p>HTMLの6行目でCSSファイルである"index.css" を読み込んでいます。</p>
-        <p>relには読み込むファイルがCSSであることを示す"stylesheet"を、hrefにはファイル名である"index.css"を記入する。</p>
-        <p>ちなみにhrefのところだが、htmlとおかれている場所が違うのであれば、このファイルからのCSSファイルの相対パスを記入する必要がある。</p>
-
-        <p>以下はCSSのプログラムである。</p>
-
-        <p class="file">index.css</p>
-        <script src="https://gist.github.com/Mr-DodoR3/c2dbafcd0752f45aea053c906b73490b.js"></script>
-
-        <p>HTMLの特定の要素を変更する際は、要素名の後に {} を書き、その中に変更内容を書く。</p>
-        <p>この変更内容を指定するやつのことを「プロパティ」という。</p>
-        <p>「プロパティ」は プロパティ: 変更値; というふうに記述する。</p>
-        <p>上のCSSのプログラムを例にとると、1行目でh1要素を変更することを指定している。</p>
-        <p>2行目で"color"というプロパティがあるが、これは文字の色を変更するというプログラムだ。</p>
-        <p>"color"のあとに"red"とあるが、これが変更値である、つまり文字の色を赤にするということである。</p>
-        <p><br>ちなみにHTMLで指定した特定のclassのみを適応させたい場合は、要素名の後に「.」を入れる必要がある。(5行目)</p>
-
+        <script class="gist" src="https://gist.github.com/Mr-DodoR3/df69b5e0f3c2a9d335c015326f37ffe9.js"></script>
+        <p>↑「HelloWorld」と表示させるプログラム</p>
         <h2>プロパティ</h2>
         <table border="5">
           <tr>
@@ -121,8 +105,13 @@
         </table>
       </div>
       <div class="space"></div>
-    </main>
 
-    <script>footer()</script>
+      <footer>
+        <div class="space"></div>
+        <div class="footerContents">
+          <div class="footerLogo"><img src="../Image/Logo.png" width="300px" height="45px"></div>
+          <p class="copyright">&copy;Ryoga Nishihan</p>
+        </div>
+      </footer>
   </body>
 </html>
