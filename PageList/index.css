@@ -17,20 +17,28 @@
   font-size: 16px;
 }
 
-.part h3 {
-  font-size: 22px;
-  padding-top: 10px;
-  border-bottom: 1px solid #666;
+.part h2 {
+  font-size: 28px;
+  padding-top: 20px;
+  border-bottom: 1px solid greenyellow;
 }
 
 .part li {
   font-size: 20px;
   padding-top: 4px;
+  padding-top: 10px;
 }
 
-.selfIntroduction li {
-  list-style: none;
-  font-size: 16px;
+.part span {
+  font-size: 14px;
+  margin-left: 2%;
+}
+
+h4 {
+  font-size: 18px;
+  text-decoration: underline wavy;
+  text-decoration-color: orange;
+  text-align: center;
 }
 
 .outline {
@@ -47,9 +55,17 @@
   margin-left: 40px;
   margin-top: 10px;
   list-style-type: disc;
-  /* display: none; */
-  color: rgba(255, 255, 255, 0);
+  opacity: 0;
+  color: rgba(255, 255, 255, 100);
   transition:all 0.5s;
+}
+
+.outline a {
+  list-style-type: disc;
+  opacity: 0;
+  color: rgba(255, 255, 255, 100);
+  transition:all 0.5s;
+  text-decoration: none;
 }
 
 .listChild ol {
@@ -78,8 +94,12 @@
   border-bottom: 1px solid greenyellow;
 }
 .in:checked ~ .outline ol {
-  display: block;
-  color: rgba(255, 255, 255, 100);
+  opacity: 1;
+  /*color: rgba(255, 255, 255, 100);*/
+}
+.in:checked ~ .outline a {
+  opacity: 1;
+  /*color: rgba(255, 255, 255, 100);*/
 }
 
 input {

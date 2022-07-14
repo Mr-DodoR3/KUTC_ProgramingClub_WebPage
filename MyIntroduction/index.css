@@ -1,0 +1,112 @@
+.chapter {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.chapter h1 {
+  font-size: 32px;
+  padding-top: 50px;
+  border-bottom: 2px solid greenyellow;
+}
+
+.part {
+  padding-top: 5px;
+}
+
+.part h3 {
+  font-size: 22px;
+  padding-top: 10px;
+  border-bottom: 1px solid #666;
+}
+
+.hobby {
+  font-size: 14px;
+}
+
+.iconIntroduction {
+  padding-top: 25px;
+}
+.iconIntroduction span {
+  font-size: 14px;
+}
+
+.steal {
+  text-decoration: line-through;
+}
+
+li {
+  font-size: 20px;
+  padding-top: 4px;
+  list-style: none;
+}
+
+.duplicate li {
+  margin-left: 20px;
+  list-style: inside;
+}
+
+.button label {
+  cursor: pointer;
+}
+
+.button li:hover {
+  color: lightskyblue;
+}
+
+.button p {
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+  font-size: 14px;
+  margin-left: 48px;
+}
+
+input {
+  display: none;
+}
+
+.procon input:checked ~ .proconIntroduction p {
+  height: auto;
+  opacity: 1;
+}
+
+.robocon input:checked ~ .roboconIntroduction p {
+  height: auto;
+  opacity: 1;
+}
+
+.dance input:checked ~ .danceIntroduction p {
+  height: auto;
+  opacity: 1;
+}
+
+.government input:checked ~ .governmentIntroduction p {
+  height: auto;
+  opacity: 1;
+}
+
+.deputyDirector input:checked ~ .deputyDirectorIntroduction p {
+  height: auto;
+  opacity: 1;
+}
+
+.insuranceCommittee input:checked ~ .insuranceCommitteeIntroduction p {
+  height: auto;
+  opacity: 1;
+}
+
+.wellnessCommittee input:checked ~ .wellnessCommitteeIntroduction p {
+  height: auto;
+  opacity: 1;
+}
+
+.civ6 input:checked ~ .civ6Introduction p {
+  height: auto;
+  opacity: 1;
+}
+
+.hoi4 input:checked ~ .hoi4Introduction p {
+  height: auto;
+  opacity: 1;
+}

@@ -1,5 +1,4 @@
-function header()
-{
+function header() {
   document.write(
     `
     <header>
@@ -15,8 +14,7 @@ function header()
   );
 }
 
-function footer()
-{
+function footer() {
   document.write(
     `
     <footer>
@@ -30,8 +28,7 @@ function footer()
   )
 }
 
-function fadeoutScene()
-{
+function fadeoutScene() {
   document.write(
     `<div id="change" class="change"></div>
     <script src="../fade.js"></script>`
