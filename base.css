@@ -33,7 +33,7 @@ a:link {
 }
 
 a:visited {
-  color: aqua;
+  color: magenta;
 }
 
 header {
@@ -105,14 +105,11 @@ table {
   -webkit-overflow-scrolling: touch;
   word-break: break-all;
   font-size: 16px;
+  border:2px solid greenyellow;
+  margin-bottom: 20px;
 }
-.fColumn {
-  width: 40%;
-  height: 64px;
-}
-.sColum {
-  width: 60%;
-  height: 64px;
+th {
+  text-align: left;
 }
 
 table.highlight tr:nth-child(1n) td {

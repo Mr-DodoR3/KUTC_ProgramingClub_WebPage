@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head lang="ja">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Java-KUTCプログラミング技術部</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="icon" href="../Image/dodo.ico">
+    <script type="text/javascript" src="../base.js"></script>
+  </head>
+  
+  <body>
+    <script>fadeoutScene()</script>
+    <script>header()</script>
+
+    <main>
+      <div class="introduction">
+        <h1>STM32用関数まとめ(C/C++)</h1>
+        <p>まず"STM32 Nucleo"とはArm社の32bitマイコンです。</p>
+        <p>プログラミング技術部ではなく、ロボット技術部で使われているマイコンで、近年ではよくロボコン部のロボットのマイコンに採用されています。</p>
+        <p>プログラムはC言語、C++言語で書く。</p>
+        <p>自分でもよくわかってないため、結構適当。</p>
+
+        <h2>関数一覧</h2>
+        <table border="5">
+          <tr>
+            <th class="fColumn">HAL_Delay(int 数値)</th>
+            <th class="sColumn">数値㍉秒待つ。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">HAL_GPIO_WritePin(GPIOA, GPIO_PIN_番号, GPIO_PIN_SET or GPIO_PIN_RESET)</th>
+            <th class="sColumn">選択したピン番号のGPIOをon、off。</th>
+          </tr>
+          <tr>
+            <th class="fColumn">HAL_TIM_PWM_Start(&htim番号, TIM_CHANNEL_番号)</th>
+            <th class="sColumn">指定した番号のピンをPWMに設定する。</th>
+          </tr>
+          <tr>
+            <tr>
+              <th class="fColumn">__HAL_TIM_SET_COMPARE(&htim番号,TIM_CHANNEL_番号, int 数値);</th>
+              <th class="sColumn">指定した番号のピンのPWMの強さを数値にする。</th>
+            </tr>
+          </tr>
+        </table>
+      </div>
+      <div class="space"></div>
+    </main>
+
+    <script>footer()</script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head lang="ja">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Java-KUTCプログラミング技術部</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="icon" href="../Image/dodo.ico">
+    <script type="text/javascript" src="../base.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  
+  <body>
+    <script>fadeoutScene()</script>
+    <script>header()</script>
+
+    <main>
+      <div class="introduction">
+        <h1>Javaの基本を抑えよう！</h1>
+        <p>プログラミングが初めての方はこちらから！</p>
+        
+        <h2>文字を表示</h2>
+        
+        <h3>そもそもプログラムって何?</h3>
+        <p>そもそもプログラムとはコンピュータ君に「これしろ」「あれしろ」と命令するものです。</p>
+        <p>しかし、コンピュータ君は「0」と「1」で書かれた2進数しか理解できません。</p>
+        <p>われわれ人間が2進数で命令をするのは大変なので、"Java"のようなコンピュータ君に理解できる言語に翻訳できるプログラミング言語を使ってコンピュータ君に命令をします。</p>
+
+        <h3>早速プログラムを書こう！</h3>
+        <p>まぁ、堅苦しい説明をしてもプログラミングはできるようにならないので早速プログラムを書いていきましょう！</p>
+        <p><br>とりあえず以下のコードを書いてみましょう！(ちなみに「Replit」環境でしてる方は初めから書かれた状態です。)</p>
+        <p class="file">Main.java</p>
+        <script src="https://gist.github.com/Mr-DodoR3/e4f77d88f0e72d354a6ebfbc4011ae54.js"></script>
+        <p>早速難しそうなものが出てきましたね...</p>
+        <p>1行目と2行目はJavaでプログラミングするために必ず必要となっているものです。</p>
+        <p>まぁ、1行目と2行目の意味は難しいので「Javaでプログラミングするための"おまじない"」とでも思ってください。</p>
+        <p><br>書けたらとりあえず実行してみましょう！</p>
+        <p class="file">Main.javaの結果</p>
+        <table>
+          <tr>
+            <th>Hello World</th>
+          </tr>
+        </table>
+        <p>どうですか? 上の結果と同じようになりましたか? それなら成功です！</p>
+        <p><br>3行目に書いた「System.out.println()」っていうのがコンピュータ君に「()の中の言葉を画面に表示しろ！」っていう命令です。</p>
+        <p>最後のセミコロン";"は日本語でいう「。」みたいなもので、命令を1つ書いたら必ずつけてください。</p>
+        <p>せっかくだから3行目の()のなかの「" "」のなかの分を書き換えて好きな文字を表示させよう！</p>
+
+        <h3>「println」と「print」</h3>
+        <p>実は3行目の「System.out.println」は「System.out.print」に書き換えても動作します。</p>
+        <p>この2つの違いは「文字を表示した後に改行するかどうか」です。</p>
+        <p>「println」は「改行する」、「print」は「改行しない」です。</p>
+        <p>このプログラムを作ってどういう違いがあるのか確認してみよう！</p>
+
+        <p class="file">Main.java</p>
+        <script src="https://gist.github.com/Mr-DodoR3/3d81d4854b7604768f8d7d1745f2d953.js"></script>
+
+        <h3>「"」はなに?</h3>
+        <p>既に気になってくれている方もいるかもですが、printlnで表示してる文字は「"」で囲まれています。</p>
+        <p>これは「ダブルクォーテーション」と呼ばれているもので、Java言語ではこれで囲まれたものは「文字列である」と認識します。</p>
+        <p>いきなり「ダブルクォーテーション」だの「文字列」だの言ってもよくわからんと思うので、この2つのコードとその実行結果を比べてみよう！</p>
+
+        <p class="file">Main.java</p>
+        <script src="https://gist.github.com/Mr-DodoR3/61ce47f7b0d2c1f335ad4bc5fe139f26.js"></script>
+
+        <p>「+」は数学と同じで「足し算」を表します。</p>
+        <p>なのでこのコードの結果は「15」になるはずです。</p>
+        <p>しかし、結果はこうなりましたよね?</p>
+        <p class="file">Main.javaの結果</p>
+        <table>
+          <tr>
+            <th>15</th>
+          </tr>
+          <tr>
+            <th>510</th>
+          </tr>
+          <tr>
+            <th>5 + 10</th>
+          </tr>
+        </table>
+        <p>3行目の実行結果はちゃんと「15」になってますよね?</p>
+        <p>けど4行目の実行結果は「510」になってます。</p>
+        <p>これは4行目の数字を「"」で囲って文字列にしているからです。</p>
+        <p>文字列っていうのは数字じゃなくて計算できない文章のことです。</p>
+        <p>文字列同士の「+」は文章と文章をつなげるって意味になります。</p>
+        <p>5行目は「+」も「"」で囲ってるので、「5 + 10」全体が文字列と扱われるので、式がそのまま表示されます。</p>
+        <p><br>文字を扱うときは「"」で囲むように！</p>
+      </div>
+      <p class="next"><a href="index.html">前のページ</a>　　　<a>次のページ</a></p>
+      <div class="space"></div>
+    </main>
+
+    <script>footer()</script>
+  </body>
+</html>
