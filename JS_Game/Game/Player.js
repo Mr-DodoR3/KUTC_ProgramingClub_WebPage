@@ -7,6 +7,7 @@ class Player {
   h = 60;
   control = 0;
   reload = 0;
+  m_reload = 20;
 
   constructor() {
     this.img = loadImage("Game/Image/F18E.png");
@@ -18,6 +19,7 @@ class Player {
     this.hp = 100;
     this.en = 100;
     this.reload = 0;
+    this.m_reload = 20;
   }
 
   drawCockpit(score) {
@@ -39,24 +41,31 @@ class Player {
     colorMode(RGB);
   }
 
-  loop() {
+  loop(pm) {
     image(this.img, this.x, 500, this.w, this.h);
     switch(this.control) {
       case -1:
-        this.x = (160 - this.x) / 10 + this.x;
+        this.x = (180 - this.x) / 10 + this.x;
         break;
       case 0:
         this.x = (280 - this.x) / 10 + this.x;
         break;
       case 1:
-        this.x = (400 - this.x) / 10 + this.x;
+        this.x = (380 - this.x) / 10 + this.x;
         break;
     }
 
-    this.reload++;
+    this.m_reload++;
+    if (this.m_reload > 20) {
+      this.m_reload = 0;
+      return 2;
+    }
     if (this.reload > 10) {
       this.reload = 0;
       return 1;
+    }
+    else {
+      this.reload++;
     }
   }
 }

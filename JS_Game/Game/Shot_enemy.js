@@ -1,4 +1,4 @@
-class Shot {
+class Shot_enemy {
   x;
   y;
   w = 4;
@@ -11,12 +11,12 @@ class Shot {
   }
 
   loop(pm) {
-    fill("#c39143");
+    fill("#ff0000");
     rect(this.x, this.y, this.w, this.h);
-    this.y -= 6;
+    this.y += 6;
 
     this.x = (pm == -1 ? this.x + 3 : ((pm == 1) ? this.x - 3 : this.x))
 
-    if ((this.y - this.h) < 0) this.flag = true;
+    if (this.y > 600) this.flag = true;
   }
 }
