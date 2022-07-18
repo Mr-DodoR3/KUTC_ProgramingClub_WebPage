@@ -46,7 +46,7 @@ function draw() {
 }
 
 function init() {
-  socre = 0;
+  score = 0;
   interval = Math.floor(Math.random() * 101) + 30;
   interval_counter = 0;
   C_interval = Math.floor(Math.random() * 101) + 30;
