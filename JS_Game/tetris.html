@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head lang="ja">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Sky Dance-KUTCプログラミング技術部</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="icon" href="../Image/dodo.ico">
+    <script type="text/javascript" src="../base.js"></script>
+  </head>
+  
+  <body>
+    <script>fadeoutScene()</script>
+    <script>header()</script>
+
+    <main>
+      <div class="introduction">
+        <h1>Tetris（試作品）</h1>
+        <div id="canvas_pos">
+          <canvas id="Canvas" width="600" height="600"></canvas>
+        </div>
+        <script src="Tetris/package/lib.js"></script>
+        <script src="Tetris/package/time.js"></script>
+        <script src="Tetris/scene/shape.js"></script>
+        <script src="Tetris/scene/game.js"></script>
+        <script src="Tetris/main.js"></script>
+        <div class="outline">
+          <h5>ゲームの説明</h5>
+          <p>テトリスの試作品。</p>
+          <p>試作品のためスコアもないゲームオーバーもない難易度もない...とクソゲーである。</p>
+          <h5>操作説明</h5>
+          <p>左・右カーソルキー：左右移動</p>
+          <p>Z・Xキー：回転</p>
+          <p>スペースキー：ストック</p>
+        </div>
+        <div class="space"></div>
+      </div>
+    </main>
+
+    <script>footer()</script>
+  </body>
+</html>
