@@ -124,3 +124,7 @@ input {
 #file-helloworld-java-L3,#file-helloworld-java-LC3 {
   background: linear-gradient(transparent 0%, #ffffcc 0%);
 }
+
+pre {
+  background-color: #666;
+}
