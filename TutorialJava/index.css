@@ -98,7 +98,7 @@
   cursor: pointer;
 }
 .in:checked ~ .outline {
-  height: 220px;
+  height: 130px;
 }
 .in:checked ~ .outline h6 {
   border-bottom: 1px solid greenyellow;
